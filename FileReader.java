@@ -43,13 +43,25 @@ public class FileReader {
                     numbers.add(Integer.parseInt(string));
 
                 } catch (final NumberFormatException e) {
-                        
+
                 }
             }
 
         }
 
         return numbers;
+    }
+
+    public boolean isDivider(int numberToDivide, int divider) {
+
+        if (numberToDivide % divider == 0) {
+            return true;
+
+        } else {
+            return false;
+
+        }
+
     }
 
 }
